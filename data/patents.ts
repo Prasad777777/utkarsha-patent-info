@@ -130,6 +130,29 @@ inventors:[
 "Jayshree Pralhad Ukirde",
 "Pooja Jalindar Pund"
 ]
+},
+
+{
+  id: 7,
+  title: "Multi-Purpose Wall Climbing Robot",
+  designNo: "483010-001",
+  patentClass: "15-04",
+  registrationDate: "30 Nov 2025",
+  grantedDate: "07 Oct 2026",
+  status: "Granted",
+  category: "Robotics",
+  thumbnail: "/thumbnails/patent7.jpg",
+  pdf: "/certificates/patent7.pdf",
+  inventors: [
+    "Vaibhav Jagan Suryawanshi",
+    "Ganesh Laxman Sangle",
+    "Yogesh Arjun Rahane",
+    "Rahul Babasaheb Thorat",
+    "Rajwardhan Sanjay Deore",
+    "Krishna Ramesh Tanpure",
+    "Utkarsha Ravindra Yais",
+    "Prasad Machhindranath Patare"
+  ]
 }
 
 ];

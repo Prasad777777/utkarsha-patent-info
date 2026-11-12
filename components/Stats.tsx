@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 const stats = [
   {
     title: "Granted Patents",
-    value: 6,
+    value: 7,
     icon: Award,
     color: "text-blue-400",
   },
   {
     title: "Total Patents",
-    value: 6,
+    value: 7,
     icon: CheckCircle2,
     color: "text-cyan-400",
   },
