@@ -2,35 +2,40 @@
 
 import { Award, CheckCircle2, Clock3, Lightbulb } from "lucide-react";
 import { motion } from "framer-motion";
-
-const stats = [
-  {
-    title: "Granted Patents",
-    value: 7,
-    icon: Award,
-    color: "text-blue-400",
-  },
-  {
-    title: "Total Patents",
-    value: 7,
-    icon: CheckCircle2,
-    color: "text-cyan-400",
-  },
-  {
-    title: "Pending",
-    value: 0,
-    icon: Clock3,
-    color: "text-orange-400",
-  },
-  {
-    title: "Engineering Domains",
-    value: 5,
-    icon: Lightbulb,
-    color: "text-green-400",
-  },
-];
+import { patents } from "@/data/patents";
 
 export default function Stats() {
+  const grantedCount = patents.filter((p) => p.status === "Granted").length;
+  const totalCount = patents.length;
+  const uniqueDomains = new Set(patents.map((p) => p.category)).size;
+
+  const stats = [
+    {
+      title: "Granted Patents",
+      value: grantedCount,
+      icon: Award,
+      color: "text-blue-400",
+    },
+    {
+      title: "Total Patents",
+      value: totalCount,
+      icon: CheckCircle2,
+      color: "text-cyan-400",
+    },
+    {
+      title: "Pending",
+      value: 0,
+      icon: Clock3,
+      color: "text-orange-400",
+    },
+    {
+      title: "Engineering Domains",
+      value: uniqueDomains,
+      icon: Lightbulb,
+      color: "text-green-400",
+    },
+  ];
+
   return (
     <section className="py-28 bg-slate-950">
 
